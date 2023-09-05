@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title> The Homework for sir Muhamad Al Masalati</title>
+    <link rel="stylesheet" href="Homework2.css">
+</head>
+<body>
+    <hr/>
+    <marquee behavior="scroll" direction="left">
+        وظيفه الطالب أحمد إبراهيم للأستاذ القدير محمد مصلاتي
+    </marquee>
+    <hr />
+
+    <div class="Central" id="Central"> 
+        <h4 for="playerName">اسم اللاعب:</h4>
+        <input type="text" id="playerName" placeholder="أدخل اسمك">
+        
+        <h4 for="factor">عامل الضرب أو الجمع:</h4>
+        <input type="number" id="factor" placeholder="أدخل العامل">
+        
+        <h4 for="numFields">عدد الحقول:</h4>
+        <input type="number" id="numFields" placeholder="أدخل عدد الحقول">
+        
+        <h4 for="operation">العملية:</h4>
+        <select id="operation">
+            <option value="addition">جمع</option>
+            <option value="multiplication">ضرب</option>
+        </select>
+
+        <br/>
+        <button onclick="startGame()">بدء اللعبة</button>
+        <br/>
+        <div id="gameFields"></div><br/>
+        <button onclick="calculateScore()">احسب النتيجة</button>
+        <br/>
+       
+    </div>
+    <script src="Homework2.js"></script>
+</body>
+</html>
